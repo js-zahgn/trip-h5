@@ -1,0 +1,95 @@
+::placeholder {
+  color: #999;
+}
+
+/********* van Field错误消息 *********/
+.van-field__error-message {
+  color: #f00;
+}
+
+/********* van RadioGroup组件 *********/
+.van-field__control[readonly] {
+  width: 0;
+  ~ .van-field__button {
+    padding-left: 0;
+  }
+}
+.van-field__label {
+  max-width: 100px;
+}
+
+.van-radio-group {
+  line-height: 1;
+  .van-radio {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.van-field__button {
+  text-align: left;
+  max-width: 100%;
+}
+
+.van-radio-group.radio-block {
+  .van-radio {
+    display: block;
+    margin-right: 0;
+    ~ .dl-translator {
+      margin-top: 7px;
+    }
+  }
+}
+
+/*  form 样式 */
+.form-title {
+  color: rgba(69, 90, 100, 0.6);
+  padding: 20px 15px 15px;
+}
+
+/********************************************/
+
+.money {
+  color: #f44;
+  font-weight: 600;
+}
+
+.textBox {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slide-left-enter {
+  transform: translate(100%, 0);
+}
+
+.slide-left-leave-active {
+  transform: translate(-50%, 0);
+}
+
+.slide-right-enter {
+  transform: translate(-50%, 0);
+}
+
+.slide-right-leave-active {
+  transform: translate(100%, 0);
+}
+
+// 选择驾驶员出生年份
+.step2YearPicker.van-datetime-picker {
+  .van-picker__columns {
+    div:nth-child(2),
+    div:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+.noYearPicer.van-datetime-picker {
+  .van-picker__columns {
+    .van-picker-column:first-child {
+      display: none;
+    }
+  }
+}
